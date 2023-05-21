@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Primary Disease Detection System</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background-image: url("https://qtxasset.com/quartz/qcloud5/media/image/fiercepharma/1612135234/doctor%20at%20laptop%20patient%20monitoring.jpg/doctor%20at%20laptop%20patient%20monitoring.jpg?VersionId=uUhPg.l4VpNLSngsaQ3f.ZcU27Qd0MaL");
+  background-repeat: no-repeat;
+  height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 450px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.left {
+
+  width: 25%;
+
+}
+
+
+.column.right {
+
+  width: 75%;
+  .box img {
+    object-fit: cover;
+    width: 20%;
+    height: 90%;
+}
+}
+select {
+        width:300px;
+    }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.box img {
+    object-fit: cover;
+    width: 20%;
+    height: 90%;
+}
+
+label{
+	width:100px;
+	display:inline-block;
+}
+button{
+    color:##000000;
+    background-color:#33adff;
+    font-size: 18px;
+    width: 50%;
+    height: 50%;
+    left:50%;
+    font-size: 30px;
+    border-radius: 12px;
+    margin-left: 90px;
+    border: 2px solid #555555;
+}
+
+
+.image1 {
+  position: relative;
+  top: 200;
+  left: 0;
+  height: 170px;
+  width: 300px;
+  border: 1px solid #000000;
+}
+.demopara {
+    line-height: 2 ;
+}
+
+.image2 {
+  position: absolute;
+  top: 400px;
+  right: 30px;
+  height: 170px;
+  width: 300px;
+  border: 1px solid #000000;
+}
+.image3 {
+  position: absolute;
+  bottom: 90px;
+  left: 950px;
+  height: 40px;
+  width: 300px;
+  border: 1px solid #000000;
+}
+h4 {
+  color: red;
+  background-color: yellow;
+  text-decoration: none;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+
+    <div class="header" >
+        <header>
+            <h2>Primary Disease Detection System<h2>
+        </header>
+    </div>
+    <div class="row">
+
+	    <div class="column right" style="background-color:#FFFFFF;"><br>
+			<h2>Disease Prediction Details</h2>
+			<h5><p class="demopara" align="justify"> Primary disease detection system is an application where you can get instant guidance on various diseases through an intelligent system online. The system predicts the underlying disease based on the symptoms you possess. Here you can also find the necessary precautions that need to be taken for the disease based on your result. In addition to that, you can also find which type of doctor to be consulted for the disease, a brief description about the disease and a link about having further details of the disease from the web page. This system also predicts the severity of your disease based on the symptoms you entered.</p></h5>
+			<h5><p class="demopara" align="justify">All you have to do is enter your most prevalent symptoms on the space provided and the system will predict the disease! If you want to know what disease you have and get early treatments click on the link given below. </p></h5>
+            <br>
+
+            <a href="{{url_for('detect')}}" target="_blank">Prediction link</a> </p>
+        </div>
+        <div class="column left" style="background-color:#CCCCFF"><br>
+        	<img class="image1" src="https://i0.wp.com/www.invajy.com/wp-content/uploads/2022/03/World-Health-Day-Quotes.jpg?resize=500%2C500&ssl=1" >
+		    <img class="image2" src="http://www.quotehd.com/imagequotes/authors9/ralph-green-quote-if-you-can-make-the-diagnosis-the-treatment-is-easy.jpg" >
+	    </div>
+    </div>
+</body>
+</html>
